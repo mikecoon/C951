@@ -1,4 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>QUANT</pattern>
+	    <template>
+	        <delay>3</delay>You might want to look into being a quantative analyst! 
+	        A quantitative analyst or “quant” is a specialist who applies mathematical and statistical methods to financial and risk management problems. 
+	        S/he develops and implements complex models used by firms to make financial and business decisions about issues such as investments, pricing 
+	        and so on. The average salary for a quantitative analyst in New Jersey is $164,500 per year.
+	        **If you want to re answer the questions please type "redo"**
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>SWE</pattern>
+	    <template>
+	        <delay>3</delay>You might want to look into being a Software Engineer! 
+	        A Software Engineer is an IT professional who designs, develops and maintains computer software at a company. They use their creativity and 
+	        technical skills and apply the principles of software engineering to help solve new and ongoing problems for an organization.
+	        The average salary for a Software Engineer is $108807 per year in United States.
+	        **If you want to re answer the questions please type "redo"**
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>DS</pattern>
+	    <template>
+	        <delay>3</delay>You might want to look into being a Data Scientist! 
+	        A data scientist interprets the raw data and extracts valuable meaning out of it. They then use this information to find patterns and develop solutions 
+	        that an organization needs to grow and compete. If we must define a data scientist, it would be someone who makes value out of data.
+	        The average data scientist salary is $100,560, according to the U.S. Bureau of Labor Statistics.
+	        **If you want to re answer the questions please type "redo"**
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>IT</pattern>
+	    <template>
+	        <delay>3</delay>You might want to look into being an IT Specialist! 
+	        IT specialists are hired to help maintain computer networks and systems. Some of their duties include setting up networks, updating old software and hardware, 
+	        and implementing data security systems.
+	        The average IT Specialist salary in the United States is $58,700 as of , but the salary range typically falls between $52,289 and $65,917.
+	        **If you want to re answer the questions please type "redo"**
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>SYSARCH</pattern>
+	    <template>
+	        <delay>3</delay>You might want to look into being a Systems Architect! 
+	        A system architect is in charge of devising, configuring, operating, and maintaining both computer and networking systems. They objectively analyze desired processes 
+	        and outcomes and advise on the right combination of IT systems and components to achieve specific business, department, team, or functional goals.
+	        The base salary for Systems Architect ranges from $144,143 to $166,652 with the average base salary of $155,262.
+	        **If you want to re answer the questions please type "redo"**
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>WEBDEV</pattern>
+	    <template>
+	        <delay>3</delay>You might want to look into being a Web Developer! 
+	        A Web Developer is in charge of ensuring websites look good and function properly. Web developers collaborate with website and graphic designers, monitor website traffic, 
+	        troubleshoot website problems when they arise, and update websites as necessary.
+	        The average salary for a Web Developer is $76048 per year in United States.
+	        **If you want to re answer the questions please type "redo"**
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>DATA</pattern>
+	    <template>
+	        <delay>3</delay>You might want to look into being a Data Analyst! 
+	        A data analyst is responsible for organizing data related to sales numbers, market research, logistics, linguistics, or other behaviors. They utilize technical expertise to 
+	        ensure data is accurate and high-quality.
+	        The US Bureau of Labor Statistics reports a median annual salary of $82,360
+	        **If you want to re answer the questions please type "redo"**
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>NONE</pattern>
+	    <template>
+	        <delay>3</delay>You should consider doing a bit more research into the computer science field to determine your interests and skill set! 
+	        **If you want to re answer the questions please type "redo"**
+        </template>
+    </category>
+    
 </aiml>

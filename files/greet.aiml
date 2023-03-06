@@ -2,7 +2,33 @@
 <aiml version="2.0">
 	<!-- insert your AIML categories here -->
 	<category>
-	    <pattern>*</pattern>
-	    <template><delay>2</delay>I do not have an answer for that. Please type "Start" to begin.</template>
+	    <pattern>HI</pattern>
+	    <template><delay>2</delay>Hello, I am a career helper bot, please tell me your name. (My name is ...)</template>
+    </category>
+    
+    <category>
+	    <pattern>HEY</pattern>
+	    <template><delay>2</delay>Hello, I am a career helper bot, please tell me your name. (My name is ...)</template>
+    </category>
+    
+    <category>
+	    <pattern>HELLO</pattern>
+	    <template><delay>2</delay>Hello, I am a career helper bot, please tell me your name. (My name is ...)</template>
+    </category>
+    
+    <category>
+	    <pattern>YO</pattern>
+	    <template><delay>2</delay>Hello, I am a career helper bot, please tell me your name. (My name is ...)</template>
+    </category>
+    
+    <category>
+	    <pattern>TEST</pattern>
+	    <template><delay>2</delay>Hello, I am a career helper bot, please tell me your name. (My name is ...)
+	    <button>
+	        <text>hi</text>
+	        <postback>HI</postback>
+        </button>
+	    </template>
+	    
     </category>
 </aiml>

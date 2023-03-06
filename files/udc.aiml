@@ -18,15 +18,17 @@
   
   <category>
       <pattern>YES</pattern>
-      <template><delay>1</delay>Great! Firstly, are you a good problem solver?</template>
+      <template><delay>1</delay>Great! Firstly, are you a good problem solver?
       <button>
-                <text>Yes</text>
-                <postback>PS</postback>
-            </button>
-            <button>
-                <text>No</text>
-                <postback>!PS</postback>
-            </button>
+            <text>yes</text>
+            <postback>PS</postback>
+      </button>
+      <button>
+            <text>no</text>
+            <postback>!PS</postback>
+      </button>
+      </template>
+      
   </category>
   
   <category>
@@ -40,12 +42,12 @@
         <template>
             <delay>1</delay>Awesome, are you creative?
             <button>
-                <text>Yes</text>
-                <postback>PS_C</postback>
+                <text>yes</text>
+                <postback>PSC</postback>
             </button>
             <button>
-                <text>No</text>
-                <postback>PS_!C</postback>
+                <text>no</text>
+                <postback>PS!C</postback>
             </button>
         </template>
     </category>
@@ -56,27 +58,27 @@
         <template>
             <delay>1</delay>No worries, are you creative?
             <button>
-                <text>Yes</text>
-                <postback>!PS_C</postback>
+                <text>yes</text>
+                <postback>!PSC</postback>
             </button>
             <button>
-                <text>No</text>
-                <postback>!PS_!C</postback>
+                <text>no</text>
+                <postback>!PS!C</postback>
             </button>
         </template>
     </category>
     
     <!-- problem solver, creative -->
     <category>
-        <pattern>PS_C</pattern>
+        <pattern>PSC</pattern>
         <template>
             <delay>1</delay>Awesome, do you excel in math?
             <button>
-                <text>Yes</text>
+                <text>yes</text>
                 <postback>QUANT</postback>
             </button>
             <button>
-                <text>No</text>
+                <text>no</text>
                 <postback>SWE</postback>
             </button>
         </template>
@@ -84,15 +86,15 @@
     
     <!-- problem solver, not creative -->
     <category>
-        <pattern>PS_!C</pattern>
+        <pattern>PS!C</pattern>
         <template>
             <delay>1</delay>No worries, do you excel in math?
             <button>
-                <text>Yes</text>
+                <text>yes</text>
                 <postback>DS</postback>
             </button>
             <button>
-                <text>No</text>
+                <text>no</text>
                 <postback>IT</postback>
             </button>
         </template>
@@ -100,15 +102,15 @@
     
     <!-- not problem solver, creative -->
     <category>
-        <pattern>!PS_C</pattern>
+        <pattern>!PSC</pattern>
         <template>
             <delay>1</delay>Awesome, do you excel in math??
             <button>
-                <text>Yes</text>
+                <text>yes</text>
                 <postback>SYSARCH</postback>
             </button>
             <button>
-                <text>No</text>
+                <text>no</text>
                 <postback>WEBDEV</postback>
             </button>
         </template>
@@ -116,18 +118,33 @@
     
     <!-- not problem solver, not creative -->
     <category>
-        <pattern>!PS_!C</pattern>
+        <pattern>!PS!C</pattern>
         <template>
             <delay>1</delay>No worries, do you excel in math?
             <button>
-                <text>Yes</text>
+                <text>yes</text>
                 <postback>DATA</postback>
             </button>
             <button>
-                <text>No</text>
+                <text>no</text>
                 <postback>NONE</postback>
             </button>
         </template>
     </category>
+    
+    <category>
+      <pattern>REDO</pattern>
+      <template><delay>1</delay>Great lets do this again! Firstly, are you a good problem solver?
+      <button>
+                <text>yes</text>
+                <postback>PS</postback>
+            </button>
+            <button>
+                <text>no</text>
+                <postback>!PS</postback>
+            </button>
+      </template>
+      
+  </category>
     
 </aiml>
