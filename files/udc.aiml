@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+  <category>
+      <pattern>*</pattern>
+      <template><delay>1</delay>I do not have an answer for that. Please type "Start" to begin.</template>
+  </category>
+  
+  <category>
+      <pattern>START</pattern>
+      <template><delay>1</delay>Hello, I am a career helper bot, please tell me your name. (My name is ...)</template>
+  </category>
+  
+  <category>
+      <pattern>MY NAME IS *</pattern>
+      <template><delay>3</delay>Hi <set name = "username"><star /></set>! I am going to ask you for your interests and then recommend you some careers. Would you like to proceed? (Yes, No)</template>
+  </category>
+  
+  <category>
+      <pattern>YES</pattern>
+      <template><delay>1</delay>Great! Firstly, are you a good problem solver?</template>
+      <button>
+                <text>Yes</text>
+                <postback>PS</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>!PS</postback>
+            </button>
+  </category>
+  
+  <category>
+      <pattern>NO</pattern>
+      <template>No worries, just type 'start' when you are ready.</template>
+  </category>
+  
+  <!-- problem solver -->
+  <category>
+        <pattern>PS</pattern>
+        <template>
+            <delay>1</delay>Awesome, are you creative?
+            <button>
+                <text>Yes</text>
+                <postback>PS_C</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>PS_!C</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- not problem solver -->
+    <category>
+        <pattern>!PS</pattern>
+        <template>
+            <delay>1</delay>No worries, are you creative?
+            <button>
+                <text>Yes</text>
+                <postback>!PS_C</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>!PS_!C</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- problem solver, creative -->
+    <category>
+        <pattern>PS_C</pattern>
+        <template>
+            <delay>1</delay>Awesome, do you excel in math?
+            <button>
+                <text>Yes</text>
+                <postback>QUANT</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>SWE</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- problem solver, not creative -->
+    <category>
+        <pattern>PS_!C</pattern>
+        <template>
+            <delay>1</delay>No worries, do you excel in math?
+            <button>
+                <text>Yes</text>
+                <postback>DS</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>IT</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- not problem solver, creative -->
+    <category>
+        <pattern>!PS_C</pattern>
+        <template>
+            <delay>1</delay>Awesome, do you excel in math??
+            <button>
+                <text>Yes</text>
+                <postback>SYSARCH</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>WEBDEV</postback>
+            </button>
+        </template>
+    </category>
+    
+    <!-- not problem solver, not creative -->
+    <category>
+        <pattern>!PS_!C</pattern>
+        <template>
+            <delay>1</delay>No worries, do you excel in math?
+            <button>
+                <text>Yes</text>
+                <postback>DATA</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>NONE</postback>
+            </button>
+        </template>
+    </category>
+    
+</aiml>
